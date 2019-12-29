@@ -47,10 +47,6 @@
 	$show_header_social_icons = $et_secondary_nav_items->show_header_social_icons;
 
 	$et_secondary_nav = $et_secondary_nav_items->secondary_nav;
-	
-	$a = "teste";
-	var_dump($a);
-	var_dump($et_secondary_nav_items);
 
 	$et_top_info_defined = $et_secondary_nav_items->top_info_defined;
 
@@ -305,7 +301,9 @@
 						<span id="et_search_icon"></span>
 					</div>
 					<?php endif; // true === et_get_option( 'show_search_icon', false ) ?>
-
+					
+					<?php wp_nav_menu('carrinho'); ?>
+					
 					<?php
 
 					/**
@@ -316,6 +314,7 @@
 					do_action( 'et_header_top' );
 
 					?>
+					
 				</div> <!-- #et-top-navigation -->
 			</div> <!-- .container -->
 			<div class="et_search_outer">
