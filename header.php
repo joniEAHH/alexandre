@@ -47,6 +47,10 @@
 	$show_header_social_icons = $et_secondary_nav_items->show_header_social_icons;
 
 	$et_secondary_nav = $et_secondary_nav_items->secondary_nav;
+	
+	$a = "teste";
+	var_dump($a);
+	var_dump($et_secondary_nav_items);
 
 	$et_top_info_defined = $et_secondary_nav_items->top_info_defined;
 
