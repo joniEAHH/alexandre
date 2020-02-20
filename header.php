@@ -275,7 +275,6 @@
 
 								<?php show_page_menu( $menuClass, false, false ); ?>
 								<?php show_categories_menu( $menuClass, false ); ?>
-								<?php echo do_shortcode('[gtranslate]'); ?>
 							</ul>
 						<?php
 							else :
