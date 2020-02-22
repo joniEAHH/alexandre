@@ -251,7 +251,7 @@
 					}
 
 					if ( '' !== $et_secondary_nav ) {
-						echo et_core_esc_wp( $et_secondary_nav );
+						//echo et_core_esc_wp( $et_secondary_nav );
 					}
 
 					//et_show_cart_total();
@@ -278,7 +278,8 @@
 							</ul>
 						<?php
 							else :
-
+								echo et_core_esc_wp( $primaryNav );
+								echo et_core_esc_wp( $et_secondary_nav );
 							endif;
 						?>
 						</nav>
