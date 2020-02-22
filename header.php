@@ -275,11 +275,11 @@
 
 								<?php show_page_menu( $menuClass, false, false ); ?>
 								<?php show_categories_menu( $menuClass, false ); ?>
-								<?php echo et_core_esc_wp( $et_secondary_nav ); ?>
 							</ul>
 						<?php
 							else :
 								echo et_core_esc_wp( $primaryNav );
+								echo et_core_esc_wp( $et_secondary_nav );
 							endif;
 						?>
 						</nav>
