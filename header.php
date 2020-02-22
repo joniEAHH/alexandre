@@ -276,11 +276,19 @@
 								<?php show_page_menu( $menuClass, false, false ); ?>
 								<?php show_categories_menu( $menuClass, false ); ?>
 							</ul>
+							<?php
+							if ( ! $et_top_info_defined && ( ! $et_slide_header || is_customize_preview() ) ) {
+								et_show_cart_total( array(
+									'no_text' => true,
+								) );
+							}
+							?>
 						<?php
 							else :
 								echo et_core_esc_wp( $primaryNav );
 							endif;
 						?>
+						
 						</nav>
 					<?php endif; ?>
 
