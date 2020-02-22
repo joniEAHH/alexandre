@@ -251,7 +251,7 @@
 					}
 
 					if ( '' !== $et_secondary_nav ) {
-						//echo et_core_esc_wp( $et_secondary_nav );
+						echo et_core_esc_wp( $et_secondary_nav );
 					}
 
 					//et_show_cart_total();
