@@ -275,23 +275,23 @@
 
 								<?php show_page_menu( $menuClass, false, false ); ?>
 								<?php show_categories_menu( $menuClass, false ); ?>
+								<?php echo et_core_esc_wp( $et_secondary_nav ); ?>
 							</ul>
 						<?php
 							else :
 								echo et_core_esc_wp( $primaryNav );
 							endif;
 						?>
-						<?php
-							if ( ! $et_top_info_defined && ( ! $et_slide_header || is_customize_preview() ) ) {
-								et_show_cart_total( array(
-									'no_text' => true,
-								) );
-							}
-						?>
 						</nav>
 					<?php endif; ?>
 
-				
+					<?php
+					if ( ! $et_top_info_defined && ( ! $et_slide_header || is_customize_preview() ) ) {
+						et_show_cart_total( array(
+							'no_text' => true,
+						) );
+					}
+					?>
 
 					<?php if ( $et_slide_header || is_customize_preview() ) : ?>
 						<span class="mobile_menu_bar et_pb_header_toggle et_toggle_<?php echo esc_attr( et_get_option( 'header_style', 'left' ) ); ?>_menu"></span>
