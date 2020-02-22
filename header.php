@@ -278,8 +278,7 @@
 							</ul>
 						<?php
 							else :
-								echo et_core_esc_wp( $primaryNav );
-								echo et_core_esc_wp( $et_secondary_nav );
+
 							endif;
 						?>
 						</nav>
