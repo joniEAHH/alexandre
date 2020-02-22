@@ -254,7 +254,7 @@
 						echo et_core_esc_wp( $et_secondary_nav );
 					}
 
-					et_show_cart_total();
+					//et_show_cart_total();
 				?>
 				</div> <!-- #et-secondary-menu -->
 
