@@ -65,7 +65,8 @@ add_shortcode( 'timeslot_func', 'timeslot_func' );
 
 remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
-
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
 
 
 add_action( 'after_setup_theme', 'register_my_menu' );
