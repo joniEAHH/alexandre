@@ -76,3 +76,5 @@ add_filter( 'woocommerce_product_single_add_to_cart_text', 'woocommerce_custom_s
 function woocommerce_custom_single_add_to_cart_text() {
     return __( 'Adicionar ao carrinho', 'woocommerce' ); 
 }
+
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
