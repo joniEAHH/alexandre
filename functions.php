@@ -80,9 +80,8 @@ function woocommerce_custom_single_add_to_cart_text() {
     return __( 'Adicionar ao carrinho', 'woocommerce' ); 
 }
 
-add_filter('woocommerce_sale_flash', 'woocommerce_custom_sale_text', 10, 3);
-function woocommerce_custom_sale_text($text, $post, $_product)
-{
-    return '<span class="onsale">Promoção</span>';
+add_filter( 'woocommerce_sale_flash', 'wc_custom_replace_sale_text' );
+function wc_custom_replace_sale_text( $html ) {
+return str_replace( __( 'Sale!', 'woocommerce' ), __( 'Promoção', 'woocommerce' ), $html );
 }
 
