@@ -63,6 +63,9 @@ $html = '<div class="timeslot_calender">';
 }
 add_shortcode( 'timeslot_func', 'timeslot_func' );
 
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+
 
 
 add_action( 'after_setup_theme', 'register_my_menu' );
@@ -77,5 +80,9 @@ function woocommerce_custom_single_add_to_cart_text() {
     return __( 'Adicionar ao carrinho', 'woocommerce' ); 
 }
 
-remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40 );
+add_filter('woocommerce_sale_flash', 'woocommerce_custom_sale_text', 10, 3);
+function woocommerce_custom_sale_text($text, $post, $_product)
+{
+    return '<span class="onsale">Promoção</span>';
+}
+
