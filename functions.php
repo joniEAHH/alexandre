@@ -94,3 +94,7 @@ function woocommerce_template_product_description() {
 }
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_product_description', 10 );
 
+
+
+// Remove the product description Title
+add_filter( 'woocommerce_product_description_heading', '__return_null' );
