@@ -55,6 +55,17 @@ body {
 	width: 100%;
 }
 
+.parent {
+    display: flex;
+}
+
+.left,
+.right {
+	padding: 1em;
+	flex: 1;
+}
+
+
 #template_container {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
 	background-color: <?php echo esc_attr( $body ); ?>;
