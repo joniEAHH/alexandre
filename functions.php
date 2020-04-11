@@ -90,7 +90,7 @@ return str_replace( __( 'Sale!', 'woocommerce' ), __( 'Promoção', 'woocommerce
 }
 
 function woocommerce_template_product_description() {
-  woocommerce_get_template( 'single-product/tabs/description.php' );
+  wc_get_template( 'single-product/tabs/description.php' );
 }
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_product_description', 10 );
 
