@@ -65,7 +65,7 @@ body {
 #template_header {
 	background-color: <?php echo esc_attr( $base ); ?>;
 	border-radius: 3px 3px 0 0 !important;
-	color: #202020;
+	color: <?php echo esc_attr( $base_text ); ?>;
 	border-bottom: 0;
 	font-weight: bold;
 	line-height: 100%;
@@ -75,7 +75,7 @@ body {
 
 #template_header h1,
 #template_header h1 a {
-	color: #202020;
+	color: <?php echo esc_attr( $base_text ); ?>;
 }
 
 #template_header_image img {
