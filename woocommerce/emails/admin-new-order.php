@@ -54,34 +54,33 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
 
 <div class="parent">
     <div class="left">
-        <p>Nota:<br>
-            Deseja devolver a obra?
-            Devolva-a diretamente para mim. Como?
-
-            1 - Verifique se ainda se encontra dentro do período de devolução: 30 dias após a receção da encomenda.
+        <p>
+            Deseja devolver a obra?<br>
+            Devolva-a diretamente para mim. Como?<br>
+			<br>
+            1 - Verifique se ainda se encontra dentro do período de devolução: 30 dias após a receção da encomenda.<br>
             2 - Prepare a devolução: coloque a obra na sua caixa original com todos os seus componentes e feche com fita
-            cola.
+            cola.<br>
             3 - O envio é da sua responsabilidade, para o endereço: Alexandre Coxo | Avenida de Fernão de Magalhães, nº
-            52 | 4300-187 Porto, Portugal.
-            Recomendo que guarde o recibo do frete como comprovativo da devolução.
-            4 - Receberá o seu reembolso quando a obra devolvida for verificada.
+            52 | 4300-187 Porto, Portugal.<br>
+            Recomendo que guarde o recibo do frete como comprovativo da devolução.<br>
+            4 - Receberá o seu reembolso quando a obra devolvida for verificada.<br>
             5 - Para mais informações consulte a secção Termos e Condições do site
             <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>, ou contacte-me para o email
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
-
         </p>
     </div>
     <div class="right">
         <p>
-            Do you want to return an article?
-            Send your order back to me. How?
-
-            1 - Check if it is still within the return period: 30 days after receiving the order.
-            2 - Prepare the return: place the article in it’s original box with all it’s components and close with tape.
+            Do you want to return an article?<br>
+            Send your order back to me. How?<br>
+			<br>
+            1 - Check if it is still within the return period: 30 days after receiving the order.<br>
+            2 - Prepare the return: place the article in it’s original box with all it’s components and close with tape.<br>
             3 - Send the package, at the customer´s risl and costs, to the following address: Alexandre Coxo | Fernão de
-            Magalhães Avenue, nº 52 | 4300-187 Porto, Portugal.
-            I recommend that you keep the receipt given to you by the couvier service as proof of your return.
-            4 - You will receive your refund once the returned items have verified.
+            Magalhães Avenue, nº 52 | 4300-187 Porto, Portugal.<br>
+            I recommend that you keep the receipt given to you by the couvier service as proof of your return.<br>
+            4 - You will receive your refund once the returned items have verified.<br>
             5 - For more information see the Terms and Conditions section of the website
             <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>, or contact me at
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
