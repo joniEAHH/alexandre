@@ -45,6 +45,7 @@ $text_lighter_40 = wc_hex_lighter( $text, 40 );
 ?>
 body {
 	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 #wrapper {
