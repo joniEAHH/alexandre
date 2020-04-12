@@ -70,7 +70,7 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
 		<img src="https://alexandrecoxo.com/wp-content/uploads/2019/12/AlexandreCoxo_logo_icon_52x52.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
     </div>
     <div class="flex-item">
-            <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>, or contact me at
+            <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
     </div>
 </div>
