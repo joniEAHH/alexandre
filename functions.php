@@ -112,14 +112,14 @@ add_filter( 'woocommerce_product_description_heading', '__return_null' );
 
 
 
-add_filter( 'woocommerce_email_styles', 'bbloomer_add_css_to_emails', 9999, 2 );
+// add_filter( 'woocommerce_email_styles', 'bbloomer_add_css_to_emails', 9999, 2 );
  
-function bbloomer_add_css_to_emails( $css, $email ) { 
-  var_dump($email->id);
-if ( $email->id == 'new_order' ) {
-   $css .= '
-      .header_wrapper { display: none !important; }
-   ';
-}
-return $css;
-}
+// function bbloomer_add_css_to_emails( $css, $email ) { 
+//   var_dump($email->id);
+// if ( $email->id == 'new_order' ) {
+//    $css .= '
+//       #header_wrapper { display: none !important; }
+//    ';
+// }
+// return $css;
+// }
