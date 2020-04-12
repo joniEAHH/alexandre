@@ -23,7 +23,7 @@ $text_align = is_rtl() ? 'right' : 'left';
 $address    = $order->get_formatted_billing_address();
 $shipping   = $order->get_formatted_shipping_address();
 
-?><table id="addresses" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0;" border="1">
+?><table id="addresses" border="1" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0; border: 1px solid #e5e5e5;">
     <tr>
         <th class="td" scope="col">
 			<?php esc_html_e( 'Morada de Faturação', 'woocommerce' ); ?>
