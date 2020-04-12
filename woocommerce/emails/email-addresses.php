@@ -26,10 +26,10 @@ $shipping   = $order->get_formatted_shipping_address();
 ?><table id="addresses" border="1" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0; border: 1px solid #e5e5e5;">
     <tr>
 		<th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
-			<?php esc_html_e( 'Morada de Faturação', 'woocommerce' ); ?>
+			<p>Morada de Faturação</p>
 		</th>
-        <th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
-			<?php esc_html_e( 'Morada de Envio', 'woocommerce' ); ?>
+		<th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
+			<p>Morada de Envio</p>
 		</th>
     </tr>
 	<tr>
