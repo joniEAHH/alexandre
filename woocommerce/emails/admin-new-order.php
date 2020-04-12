@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <style>
 	.header_wrapper {
-		display: none;
+		display: none !important;
 	}
 </style>	
 
