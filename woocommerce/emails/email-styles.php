@@ -160,9 +160,13 @@ body {
 }
 
 .td {
-	color: ##333333;
+	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
 	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
 	vertical-align: middle;
+}
+
+.td--title {
+	color: #333;
 }
 
 .address {
