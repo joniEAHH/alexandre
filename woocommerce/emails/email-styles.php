@@ -83,7 +83,7 @@ body {
 	font-weight: bold;
 	line-height: 100%;
 	vertical-align: middle;
-	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #template_header h1,
@@ -104,7 +104,7 @@ body {
 #template_footer #credit {
 	border: 0;
 	color: <?php echo esc_attr( $text_lighter_40 ); ?>;
-	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	line-height: 150%;
 	text-align: center;
@@ -153,7 +153,7 @@ body {
 
 #body_content_inner {
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
-	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.2em;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
@@ -173,7 +173,7 @@ body {
 
 .text {
 	color: <?php echo esc_attr( $text ); ?>;
-	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .link {
@@ -186,8 +186,8 @@ body {
 }
 
 h1 {
-	color: "#515151"
-	font-family: 'Playfair Display', 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	color: "#515151";
+	font-family: 'Playfair Display', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.2em;
@@ -198,7 +198,7 @@ h1 {
 h2 {
 	color: <?php echo esc_attr( $base ); ?>;
 	display: block;
-	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 1.2em;
@@ -209,7 +209,7 @@ h2 {
 h3 {
 	color: <?php echo esc_attr( $base ); ?>;
 	display: block;
-	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 1.2em;
