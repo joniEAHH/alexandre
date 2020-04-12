@@ -24,6 +24,14 @@ $address    = $order->get_formatted_billing_address();
 $shipping   = $order->get_formatted_shipping_address();
 
 ?><table id="addresses" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0;" border="0">
+    <tr>
+        <th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
+            <?php esc_html_e( 'Produto', 'woocommerce' ); ?></th>
+        <th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
+            <?php esc_html_e( 'Quantidade', 'woocommerce' ); ?></th>
+        <th class="td preco" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
+            <?php esc_html_e( 'Preço', 'woocommerce' ); ?></th>
+    </tr>
 	<tr>
 		<td style="text-align:<?php echo esc_attr( $text_align ); ?>; font-family: 'roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border:0; padding:0;" valign="top" width="50%">
 			<h2><?php esc_html_e( 'Morada de Faturação', 'woocommerce' ); ?></h2>
