@@ -95,13 +95,6 @@ function woocommerce_template_product_description() {
 add_action( 'woocommerce_after_single_product_summary', 'woocommerce_template_product_description', 10 );
 
 
-/**
-* @snippet       Display FREE if Price Zero or Empty - WooCommerce Single Product
-* @how-to        Get CustomizeWoo.com FREE
-* @author        Rodolfo Melogli
-* @testedwith    WooCommerce 3.8
-* @donate $9     https://businessbloomer.com/bloomer-armada/
-*/
   
 add_filter( 'woocommerce_get_price_html', 'bbloomer_price_free_zero_empty', 9999, 2 );
    
@@ -116,3 +109,17 @@ function bbloomer_price_free_zero_empty( $price, $product ){
 
 // Remove the product description Title
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
+
+
+
+add_filter( 'woocommerce_email_styles', 'bbloomer_add_css_to_emails', 9999, 2 );
+ 
+function bbloomer_add_css_to_emails( $css, $email ) { 
+  var_dump($email->id);
+if ( $email->id == 'new_order' ) {
+   $css .= '
+      .header_wrapper { display: none !important; }
+   ';
+}
+return $css;
+}
