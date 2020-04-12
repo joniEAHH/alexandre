@@ -199,9 +199,9 @@ h2 {
 	color: <?php echo esc_attr( $base ); ?>;
 	display: block;
 	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	font-size: 18px;
+	font-size: 10px;
 	font-weight: bold;
-	line-height: 130%;
+	line-height: 1.2em;
 	margin: 0 0 18px;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 }
@@ -212,7 +212,7 @@ h3 {
 	font-family: 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
-	line-height: 130%;
+	line-height: 1.2em;
 	margin: 16px 0 8px;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 }
