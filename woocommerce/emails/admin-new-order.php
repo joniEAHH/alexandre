@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
  */
 //do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<?php wc_get_template( 'email-header2.php', array( 'email_heading' => $email_heading ) ) ; ?>
+<?php wc_get_template( 'emails/email-header2.php', array( 'email_heading' => $email_heading ) ) ; ?>
 
 
 <?php /* translators: %s: Customer billing full name */ ?>
