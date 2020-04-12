@@ -168,7 +168,6 @@ body {
 .address {
 	padding: 12px;
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
-	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
 }
 
 .text {
