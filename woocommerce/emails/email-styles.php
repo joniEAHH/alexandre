@@ -193,7 +193,6 @@ h1 {
 	line-height: 1.2em;
 	margin: 0;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
-	text-shadow: 0 1px 0 <?php echo esc_attr( $base_lighter_20 ); ?>;
 }
 
 h2 {
