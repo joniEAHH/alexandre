@@ -160,7 +160,7 @@ body {
 }
 
 .td {
-	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
+	color: ##333333;
 	border: 1px solid <?php echo esc_attr( $body_darker_10 ); ?>;
 	vertical-align: middle;
 }
