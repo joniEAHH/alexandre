@@ -31,7 +31,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer billing full name */ ?>
 <h1 style="color: #000"><?php printf( esc_html__( 'Olá %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></h1>
-<p>
+<p style="margin: 10px 0">
 	Obrigado por adquirir as minhas obras!<br>
 	Thank you for purchasing my works!
 </p>
