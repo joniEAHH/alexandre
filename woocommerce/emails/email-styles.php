@@ -94,6 +94,7 @@ body {
 #template_header_image img {
 	margin-left: 0;
 	margin-right: 0;
+	width: 250px;
 }
 
 #template_footer td {
@@ -243,7 +244,4 @@ img {
 	height: auto;
 }
 
-#logo {
-	width: 250px;
-}
 <?php
