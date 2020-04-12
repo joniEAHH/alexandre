@@ -70,7 +70,7 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
 		<img width="30" src="https://alexandrecoxo.com/wp-content/uploads/2019/12/AlexandreCoxo_logo_icon_52x52.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
     </div>
     <div class="flex-item" style="flex: 0">
-          	<a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a><br>
+          	<a href="https://alexandrecoxo.com/">www.alexandrecoxo.com</a><br>
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
     </div>
 </div>
@@ -92,7 +92,7 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
             Recomendo que guarde o recibo do frete como comprovativo da devolução.<br>
             4 - Receberá o seu reembolso quando a obra devolvida for verificada.<br>
             5 - Para mais informações consulte a secção Termos e Condições do site
-            <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>, ou contacte-me para o email
+            <a href="https://alexandrecoxo.com/">www.alexandrecoxo.com</a>, ou contacte-me para o email
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
         </p>
     </div>
@@ -108,7 +108,7 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
             I recommend that you keep the receipt given to you by the couvier service as proof of your return.<br>
             4 - You will receive your refund once the returned items have verified.<br>
             5 - For more information see the Terms and Conditions section of the website
-            <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>, or contact me at
+            <a href="https://alexandrecoxo.com/">www.alexandrecoxo.com</a>, or contact me at
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
         </p>
     </div>
