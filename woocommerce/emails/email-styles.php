@@ -171,6 +171,7 @@ body {
 }
 
 .address {
+	font-size: 14px;
 	padding: 8px;
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
 }
