@@ -31,6 +31,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer billing full name */ ?>
 <h1 style="color: #000"><?php printf( esc_html__( 'Olá %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></h1>
+
 <p style="margin: 10px 0; line-height: 1.3em">
 	Obrigado por adquirir as minhas obras!<br>
 	Thank you for purchasing my works!
@@ -58,6 +59,24 @@ do_action( 'woocommerce_email_order_meta', $order, $sent_to_admin, $plain_text, 
 do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
 
 ?>
+
+<p style="margin: 10px 0; line-height: 1.3em">
+	Até breve,<br>
+	See you later,
+</p>
+
+<div class="flex-container">
+    <div class="flex-item">
+		<img src="https://alexandrecoxo.com/wp-content/uploads/2019/12/AlexandreCoxo_logo_icon_52x52.png" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" />
+    </div>
+    <div class="flex-item">
+            <a href="www.alexandrecoxo.com">www.alexandrecoxo.com</a>, or contact me at
+            <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
+    </div>
+</div>
+
+
+
 
 <div class="flex-container">
     <div class="flex-item">
