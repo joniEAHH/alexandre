@@ -56,13 +56,13 @@ body {
 	width: 100%;
 }
 
-.parent {
+.flex-container {
 	display: flex;
 	font-size: 10px;
 }
 
-.left,
-.right {
+
+.flex-item {
 	padding: 1em;
 	flex: 1;
 }

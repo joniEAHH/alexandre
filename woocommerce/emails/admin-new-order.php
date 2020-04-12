@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 /*
  * @hooked WC_Emails::email_header() Output the email header
  */
-do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
+//do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer billing full name */ ?>
 <h1 style="color: #000"><?php printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></h1>
@@ -52,8 +52,8 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
 
 ?>
 
-<div class="parent">
-    <div class="left">
+<div class="flex-container">
+    <div class="flex-item">
         <p>
             Deseja devolver a obra?<br>
             Devolva-a diretamente para mim. Como?<br>
@@ -70,7 +70,7 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
             <a href="mailto:info@alexandrecoxo.com">info@alexandrecoxo.com</a>
         </p>
     </div>
-    <div class="right">
+    <div class="flex-item">
         <p>
             Do you want to return an article?<br>
             Send your order back to me. How?<br>
