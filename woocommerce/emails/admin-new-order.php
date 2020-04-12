@@ -23,8 +23,9 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <style>
 	#header_wrapper,
-	tfoot, .preco {
-		display: none !important;
+	tfoot, .preco,
+	.order_item td:nth-child(3) {
+		display: none;
 	}
 </style>	
 
