@@ -75,10 +75,7 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
     </div>
 </div>
 
-
-
-
-<div class="flex-container">
+<div class="flex-container" style="padding-top: 50px;">
     <div class="flex-item">
         <p>
             Deseja devolver a obra?<br>
