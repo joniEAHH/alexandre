@@ -21,7 +21,7 @@ $text_align = is_rtl() ? 'right' : 'left';
 
 do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text, $email ); ?>
 
-<h2>
+<p>
 	<?php
 	if ( $sent_to_admin ) {
 		$before = '<a class="link" href="' . esc_url( $order->get_edit_order_url() ) . '">';
@@ -33,7 +33,7 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 	/* translators: %s: Order ID. */
 	echo wp_kses_post( $before . sprintf( __( '[Order #%s]', 'woocommerce' ) . $after . ' (<time datetime="%s">%s</time>)', $order->get_order_number(), $order->get_date_created()->format( 'c' ), wc_format_datetime( $order->get_date_created() ) ) );
 	?>
-</h2>
+</p>
 
 <div style="margin-bottom: 40px;">
 	<table class="td" cellspacing="0" cellpadding="6" style="width: 100%; font-family: 'roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;" border="1">
