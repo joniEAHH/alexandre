@@ -188,7 +188,7 @@ body {
 h1 {
 	color: "#515151"
 	font-family: 'Playfair Display', 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.2em;
 	margin: 0;
