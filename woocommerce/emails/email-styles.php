@@ -124,11 +124,11 @@ body {
 }
 
 #body_content table td td {
-	padding: 6px;
+	padding: 8px;
 }
 
 #body_content table td th {
-	padding: 6px;
+	padding: 8px;
 }
 
 #body_content td ul.wc-item-meta {
@@ -171,7 +171,7 @@ body {
 }
 
 .address {
-	padding: 6px;
+	padding: 8px;
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
 }
 
