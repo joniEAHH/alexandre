@@ -186,7 +186,7 @@ body {
 }
 
 h1 {
-	color: <?php echo esc_attr( $base ); ?>;
+	color: "#515151"
 	font-family: 'Playfair Display', 'Roboto', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-size: 25px;
 	font-weight: 300;
