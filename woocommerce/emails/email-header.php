@@ -25,6 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
 		<title><?php echo get_bloginfo( 'name', 'display' ); ?></title>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		
 	</head>
