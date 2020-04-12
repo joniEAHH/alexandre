@@ -33,7 +33,7 @@ $shipping   = $order->get_formatted_shipping_address();
 		</th>
     </tr>
 	<tr>
-		<td style="text-align:<?php echo esc_attr( $text_align ); ?>; font-family: 'roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border: 1px solid #e5e5e5; padding:0;" valign="top" width="50%">
+		<td style="text-align:<?php echo esc_attr( $text_align ); ?>; border: 1px solid #e5e5e5; padding:0;" valign="top" width="50%">
 
 			<address class="address">
 				<?php echo wp_kses_post( $address ? $address : esc_html__( 'N/A', 'woocommerce' ) ); ?>
@@ -46,7 +46,7 @@ $shipping   = $order->get_formatted_shipping_address();
 			</address>
 		</td>
 		<?php if ( ! wc_ship_to_billing_address_only() && $order->needs_shipping_address() && $shipping ) : ?>
-			<td style="text-align:<?php echo esc_attr( $text_align ); ?>; font-family: 'roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border:0; padding:0;" valign="top" width="50%">
+			<td style="text-align:<?php echo esc_attr( $text_align ); ?>; border:0; padding:0; border: 1px solid #e5e5e5" valign="top" width="50%">
 
 				<address class="address"><?php echo wp_kses_post( $shipping ); ?></address>
 			</td>
