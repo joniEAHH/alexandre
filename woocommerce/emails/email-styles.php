@@ -242,4 +242,8 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+#logo {
+	width: 250px;
+}
 <?php
