@@ -26,10 +26,10 @@ $shipping   = $order->get_formatted_shipping_address();
 ?><table id="addresses" border="1" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0; border: 1px solid #e5e5e5;">
     <tr>
 		<th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
-			<p style="color:#333333;">Morada de Faturação</p>
+			<p style="color:#333333; margin: 0">Morada de Faturação</p>
 		</th>
 		<th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
-			<p style="color:#333333;">Morada de Envio</p>
+			<p style="color:#333333; margin: 0">Morada de Envio</p>
 		</th>
     </tr>
 	<tr>
