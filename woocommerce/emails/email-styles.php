@@ -202,6 +202,7 @@ h2 {
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 1.2em;
+	margin: 0 0 5px;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 }
 
