@@ -23,7 +23,7 @@ $text_align = is_rtl() ? 'right' : 'left';
 $address    = $order->get_formatted_billing_address();
 $shipping   = $order->get_formatted_shipping_address();
 
-?><table id="addresses" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0;" border="0">
+?><table id="addresses" cellspacing="0" cellpadding="0" style="width: 100%; vertical-align: top; margin-bottom: 40px; padding:0;" border="1">
     <tr>
         <th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
             <?php esc_html_e( 'Produto', 'woocommerce' ); ?></th>
@@ -34,7 +34,9 @@ $shipping   = $order->get_formatted_shipping_address();
     </tr>
 	<tr>
 		<td style="text-align:<?php echo esc_attr( $text_align ); ?>; font-family: 'roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif; border:0; padding:0;" valign="top" width="50%">
-			<h2><?php esc_html_e( 'Morada de Faturação', 'woocommerce' ); ?></h2>
+
+			<th class="td" scope="col" style="text-align:<?php echo esc_attr( $text_align ); ?>;">
+            <?php esc_html_e( 'Morada de Faturação', 'woocommerce' ); ?></th>
 
 			<address class="address">
 				<?php echo wp_kses_post( $address ? $address : esc_html__( 'N/A', 'woocommerce' ) ); ?>
