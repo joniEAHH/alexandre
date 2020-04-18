@@ -106,6 +106,10 @@ p {
 	border-radius: 6px;
 }
 
+#template_footer_notas p {
+	font-size: 12px;
+}
+
 #template_footer #credit {
 	border: 0;
 	color: <?php echo esc_attr( $text_lighter_40 ); ?>;
