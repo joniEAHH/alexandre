@@ -68,7 +68,17 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
  */
 if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
+	echo "Parabéns! | Congratulations!
+	A sua encomenda chegou ao destino escolhido. | Your order has arrived at your chosen destination.
+	
+	Quero continuar a servi-lo com o máximo de rigor e satisfação. | I want to continue to serve you with the utmost rigor and satisfaction.
+	
+	Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a {item_name}, fico verdadeiramente agradecido por isso.
+	
+	Please go to the form to help me improve by telling me about your experience with ${item_name}, I am truly grateful for that."
 }
+
+
 
 ?>
 <tr>
