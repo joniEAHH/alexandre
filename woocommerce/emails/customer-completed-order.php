@@ -96,7 +96,7 @@ A sua encomenda chegou ao destino escolhido. | Your order has arrived at your ch
 <p>Please go to the form to help me improve by telling me about your experience with <?php echo $crack; ?>, I am truly grateful for that.</p>
 <a class="et_pb_button" href="https://forms.gle/c8hXQWG5dJJY49C68" target="_blank">Aceder ao formulário | Access form</a>
 <tr>
-	<td align="center" valign="top" style="padding: 48px 48px 32px;">
+	<td align="center" valign="top" style="padding: 20px 48px 32px;">
 		<!-- Footer -->
 		<table border="0" cellpadding="10" cellspacing="0" width="100%" id="template_footer">
 			<tr>
