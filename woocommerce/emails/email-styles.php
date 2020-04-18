@@ -157,7 +157,7 @@ body {
 	color: <?php echo esc_attr( $text_lighter_20 ); ?>;
 	font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	line-height: 1.2em;
+	line-height: 1.4em;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 }
 

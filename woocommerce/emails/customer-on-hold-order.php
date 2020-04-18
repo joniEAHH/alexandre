@@ -84,21 +84,23 @@ if ( $additional_content ) {
 					<!-- End Header -->
 				</td>
 			</tr>
-			<tr>
-				<td valign="top">
-					<table border="0" cellpadding="10" cellspacing="0" width="100%">
-						<tr>
-							<td colspan="2" valign="middle" id="credit">
-								<?php echo wpautop( wp_kses_post( wptexturize( apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) ) ) ) ); ?>
-							</td>
-						</tr>
-					</table>
-				</td>
-			</tr>
 		</table>
 		<!-- End Footer -->
 	</td>
 </tr>
+
+<div style="display: flex; width 100%; margin-left: auto;">
+<p>
+	Obrigado pela sua aquisição.<br>
+	Thank you for your purchase.
+</p>
+
+<p>
+	Até breve,<br>
+	See you later,
+</p>
+<p style="font-weight: bold;">Alexandre Coxo</p>
+</div>
 <?php
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
