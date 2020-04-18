@@ -88,19 +88,33 @@ if ( $additional_content ) {
 		<!-- End Footer -->
 	</td>
 </tr>
+<tr>
+	<td align="center" valign="top">
+		<!-- Footer -->
+		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
+			<tr>
+				<td align="center" valign="top">
+					<!-- Header -->
+					<p>
+						Obrigado pela sua aquisição.<br>
+						Thank you for your purchase.
+					</p>
 
-<div style="display: flex; width 100%; margin-left: auto;">
-<p>
-	Obrigado pela sua aquisição.<br>
-	Thank you for your purchase.
-</p>
+					<p>
+						Até breve,<br>
+						See you later,
+					</p>
+					<p style="font-weight: bold;">Alexandre Coxo</p>
+					<!-- End Header -->
+				</td>
+			</tr>
+		</table>
+		<!-- End Footer -->
+	</td>
+</tr>
 
-<p>
-	Até breve,<br>
-	See you later,
-</p>
-<p style="font-weight: bold;">Alexandre Coxo</p>
-</div>
+
+
 <?php
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
