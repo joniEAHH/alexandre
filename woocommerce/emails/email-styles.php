@@ -194,12 +194,16 @@ body {
 
 h1 {
 	color: "#515151";
-	font-family: 'Playfair Display', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+	font-family: Roboto, Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.2em;
 	margin: 0;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
+}
+
+.secondary-font {
+	font-family: 'Playfair Display', "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
 
 h2 {
