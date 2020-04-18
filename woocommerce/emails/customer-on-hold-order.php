@@ -24,7 +24,9 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
 <p><?php printf( esc_html__( 'Olá %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
-<p><?php esc_html_e( 'Thanks for your order. It’s on-hold until we confirm that payment has been received. In the meantime, here’s a reminder of what you ordered:', 'woocommerce' ); ?></p>
+<p><?php esc_html_e( 'O seu Pedido foi recebido com sucesso. | Your Order has been successfully received.', 'woocommerce' ); ?></p>
+
+<p><?php esc_html_e( 'Brevemente irá receber um email de confirmação do pagamento e respetiva fatura. | You will soon receive a payment confirmation email and invoice.', 'woocommerce' ); ?></p>
 
 <?php
 
