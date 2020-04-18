@@ -100,13 +100,13 @@ if ( $additional_content ) {
 				<td valign="top">
 					<!-- Header -->
 					<p>
-					Nota:
+					Nota:<br>
 						Para as encomendas em Portugal o nosso operador logístico fornece o serviço de Track&Trace até ao momento da entrega. Para os restantes países, este serviço apenas é garantido até à saída de Portugal, salvo exceções. Dependendo da sua localização, a entrega demora normalmente entre 2 a 10 dias úteis a contar da data de envio. Para mais informações consulte as nossas <a href="https://alexandrecoxo.com/ajuda/">FAQ’s</a>.
 						Para mais informações contate o nosso operador logístico (<a href="https://www.ctt.pt/particulares/">aqui</a>).
 					</p>
 
 					<p>
-					Note:
+					Note:<br>
 					For orders in Portugal our logistics operator provides Track & Trace service until delivery. For all other countries, this service is only guaranteed until you leave Portugal, except for exceptions. Depending on your location, shipping typically takes 2-10 business days from the date of shipment. For more information see our <a href="https://alexandrecoxo.com/ajuda/">FAQ’s</a>.
 					For more information contact our logistics operator (<a href="https://www.ctt.pt/particulares/">here</a>).
 

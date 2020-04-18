@@ -109,6 +109,7 @@ p {
 
 #template_footer_notas p {
 	font-size: 12px;
+	line-heigth: 1.4em;
 }
 
 #template_footer #credit {
