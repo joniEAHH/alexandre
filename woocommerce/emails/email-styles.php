@@ -113,14 +113,15 @@ p {
 }
 
 .et_pb_button {
+	display: block;
 	padding: 0.3em 1em;
 	border: 2px solid #000;
     color: #000;
     font-size: 14px;
     font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
 	font-weight: bold;
-	text-decoration: none;
-	margin: 0 auto; 
+	text-decoration: none; 
+	text-align: center;
 }
 
 #template_footer #credit {
