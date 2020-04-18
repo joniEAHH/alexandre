@@ -73,13 +73,13 @@ if ( $additional_content ) {
 					<!-- Header -->
 					<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header">
 						<tr>
-						<td style="padding: 10px; float: left;">
-								<a style="float: left; width: 20px; height: 20px; background-image: url(https://berlindes.com/wp-content/uploads/2019/05/insta-icon_claro.png); display: block; background-size: contain; background-repeat: no-repeat;" href="https://www.instagram.com/berlindesofficial/"></a>
-								<a style="float: left; width: 20px; height: 20px; margin-left: 10px; background-image: url(https://berlindes.com/wp-content/uploads/2019/05/insta-face_claro.png); display: block; background-size: contain; background-repeat: no-repeat;" href="https://www.facebook.com/berlindesoficial/"></a>
-							</td>
-
-							<td style="padding: 10px; float: right;">
-								<h1 style="font-family: roboto; font-size: 14px; color: #f6dfab; margin: 0;">Berlindes®</h1>
+							<td style="padding: 10px;">
+								<a style="width: 20px; height: 20px; display: block;" href="https://www.instagram.com/berlindesofficial/">
+									<img src="https://alexandrecoxo.com/wp-content/uploads/2020/04/insta.png" alt="">
+								</a>
+								<a style="width: 20px; height: 20px; margin-left: 10px;" href="https://www.facebook.com/berlindesoficial/">
+									<img src="https://alexandrecoxo.com/wp-content/uploads/2020/04/face.png" alt="">
+								</a>
 							</td>
 						</tr>
 					</table>
