@@ -80,7 +80,6 @@ body {
 #template_header {
 	background-color: #faf7f4;
 	border-radius: 3px 3px 0 0 !important;
-	color: #555555;
 	border-bottom: 0;
 	font-weight: bold;
 	line-height: 100%;
@@ -90,7 +89,7 @@ body {
 
 #template_header h1,
 #template_header h1 a {
-	color: <?php echo esc_attr( $base_text ); ?>;
+	color: #555555;
 }
 
 #template_header_image img {
