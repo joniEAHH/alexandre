@@ -74,9 +74,9 @@ if ( $additional_content ) {
 					<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header">
 						<tr>
 							<td style="padding: 10px; display: flex; justify-content: center;">
-								<a style="width: 20px; height: 20px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/insta.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+								<a style="width: 20px; height: 20px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/insta-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
 								href="https://www.instagram.com/alexandre_coxo/"></a>
-								<a style="width: 20px; height: 20px; margin-left: 10px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/face.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+								<a style="width: 20px; height: 20px; margin-left: 10px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/face-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
 								href="https://www.facebook.com/alexandrecoxoart/"></a>
 							</td>
 						</tr>
