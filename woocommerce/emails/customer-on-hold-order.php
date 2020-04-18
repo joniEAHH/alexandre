@@ -31,7 +31,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 
 <p>
-<img  src="https://alexandrecoxo.com/wp-content/uploads/2020/04/order-on-hold.jpg" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"  />
+	<img src="https://alexandrecoxo.com/wp-content/uploads/2020/04/order-on-hold.jpg" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"  />
 </p>
 
 

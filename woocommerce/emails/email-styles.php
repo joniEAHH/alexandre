@@ -191,7 +191,6 @@ p {
 }
 
 #header_wrapper {
-	padding: 36px 48px;
 	display: block;
 }
 
