@@ -68,6 +68,8 @@ body {
 }
 
 
+
+
 #template_container {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
 	background-color: <?php echo esc_attr( $body ); ?>;
@@ -76,7 +78,7 @@ body {
 }
 
 #template_header {
-	background-color: <?php echo esc_attr( $base ); ?>;
+	background-color: #faf7f4;
 	border-radius: 3px 3px 0 0 !important;
 	color: <?php echo esc_attr( $base_text ); ?>;
 	border-bottom: 0;
