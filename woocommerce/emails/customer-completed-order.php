@@ -83,7 +83,7 @@ if ( $additional_content ) {
 		$after  = '';
 	}
 	/* translators: %s: Order ID. */
-	echo wp_kses_post( $before . sprintf( __( '[Order #%s]', 'woocommerce' ) . $after . ' (<time datetime="%s">%s</time>)', $order->get_order_number(), $order->get_date_created()->format( 'c' ), wc_format_datetime( $order->get_date_created() ) ) );
+	$crack =  $before . sprintf( __( '[Order #%s]', 'woocommerce' ) . $after . ' (<time datetime="%s">%s</time>)', $order->get_order_number(), $order->get_date_created()->format( 'c' ), wc_format_datetime( $order->get_date_created() ) ) ;
 	?>
 </p>
 <div>
@@ -92,8 +92,8 @@ Parabéns! | Congratulations!<br>
 A sua encomenda chegou ao destino escolhido. | Your order has arrived at your chosen destination.
 </p>
 <p>Quero continuar a servi-lo com o máximo de rigor e satisfação. | I want to continue to serve you with the utmost rigor and satisfaction.</p>
-<p>Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a <?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text, $email ); ?>, fico verdadeiramente agradecido por isso.</p>
-<p>Please go to the form to help me improve by telling me about your experience with <?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text, $email ); ?>, I am truly grateful for that.</p>
+<p>Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a <?php echo $crack; ?>, fico verdadeiramente agradecido por isso.</p>
+<p>Please go to the form to help me improve by telling me about your experience with <?php echo $crack; ?>, I am truly grateful for that.</p>
 
 <tr>
 	<td align="center" valign="top" style="padding: 48px 48px 32px;">
