@@ -68,7 +68,9 @@ body {
 }
 
 
-
+p {
+   color: #5c5c5c;
+}
 
 #template_container {
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;

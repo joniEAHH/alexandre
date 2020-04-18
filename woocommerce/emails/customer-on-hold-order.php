@@ -66,35 +66,23 @@ if ( $additional_content ) {
 
 <tr>
 	<td align="center" valign="top">
-		<!-- Footer -->
 		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
 			<tr>
 				<td align="center" valign="top">
-					<!-- Header -->
-					<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header">
-						<tr>
-							<td style="padding: 10px; display: flex; justify-content: center;">
-								<a style="width: 20px; height: 20px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/insta-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
-								href="https://www.instagram.com/alexandre_coxo/"></a>
-								<a style="width: 20px; height: 20px; margin-left: 10px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/face-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
-								href="https://www.facebook.com/alexandrecoxoart/"></a>
-							</td>
-						</tr>
-					</table>
-					<!-- End Header -->
+					<a style="width: 20px; height: 20px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/insta-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+					href="https://www.instagram.com/alexandre_coxo/"></a>
+					<a style="width: 20px; height: 20px; margin-left: 10px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/face-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+					href="https://www.facebook.com/alexandrecoxoart/"></a>
 				</td>
 			</tr>
 		</table>
-		<!-- End Footer -->
 	</td>
 </tr>
 <tr>
 	<td align="center" valign="top">
-		<!-- Footer -->
 		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
 			<tr>
-				<td align="center" valign="top">
-					<!-- Header -->
+				<td align="right" valign="top">
 					<p>
 						Obrigado pela sua aquisição.<br>
 						Thank you for your purchase.
@@ -105,11 +93,9 @@ if ( $additional_content ) {
 						See you later,
 					</p>
 					<p style="font-weight: bold;">Alexandre Coxo</p>
-					<!-- End Header -->
 				</td>
 			</tr>
 		</table>
-		<!-- End Footer -->
 	</td>
 </tr>
 
