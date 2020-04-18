@@ -75,7 +75,7 @@ if ( $additional_content ) {
 	
 	Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a {item_name}, fico verdadeiramente agradecido por isso.
 	
-	Please go to the form to help me improve by telling me about your experience with ${item_name}, I am truly grateful for that."
+	Please go to the form to help me improve by telling me about your experience with {item_name}, I am truly grateful for that."
 }
 
 
