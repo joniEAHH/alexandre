@@ -72,7 +72,7 @@ if ( $additional_content ) {
 
 ?>
 <tr>
-	<td align="center" valign="top">
+	<td align="center" valign="top" style="padding: 48px 48px 32px;">
 		<!-- Footer -->
 		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
 			<tr>
@@ -91,11 +91,27 @@ if ( $additional_content ) {
 					<!-- End Header -->
 				</td>
 			</tr>
+
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header">
+						<tr>
+							<td align="center" style="padding: 10px;">
+								<div style="display: inline-flex;">
+									<a style="width: 20px; height: 20px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/insta-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+									href="https://www.instagram.com/alexandre_coxo/"></a>
+									<a style="width: 20px; height: 20px; margin-left: 10px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/face-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+									href="https://www.facebook.com/alexandrecoxoart/"></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
 		</table>
 		<!-- End Footer -->
 	</td>
 </tr>
-
 <?php
 
 /*
