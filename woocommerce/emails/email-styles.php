@@ -193,12 +193,11 @@ body {
 }
 
 h1 {
-	color: "#515151";
+	color: #515151;
 	font-family: Roboto, Arial, sans-serif;
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.2em;
-	margin: 0;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
 }
 
