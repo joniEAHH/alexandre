@@ -64,7 +64,7 @@ body {
 
 .flex-item {
 	padding: 1em;
-	flex: 1;
+	width: 100%;
 }
 
 
