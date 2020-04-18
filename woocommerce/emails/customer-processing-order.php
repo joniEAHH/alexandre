@@ -106,7 +106,7 @@ if ( $additional_content ) {
 		<!-- Footer -->
 		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
 			<tr>
-				<td valign="top">
+				<td valign="top" id="credit">
 					<!-- Header -->
 					<p>
 					Nota:
