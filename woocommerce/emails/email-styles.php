@@ -198,7 +198,7 @@ p {
 h1 {
 	color: #515151;
 	font-family: Roboto, Arial, sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.2em;
 	text-align: <?php echo is_rtl() ? 'right' : 'left'; ?>;
