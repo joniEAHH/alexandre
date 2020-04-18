@@ -120,6 +120,7 @@ p {
     font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
 	font-weight: bold;
 	text-decoration: none;
+	margin: 0 auto; 
 }
 
 #template_footer #credit {
