@@ -118,6 +118,8 @@ p {
     color: #000;
     font-size: 14px;
     font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 #template_footer #credit {
