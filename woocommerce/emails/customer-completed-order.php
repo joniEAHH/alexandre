@@ -50,7 +50,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 //  * @hooked WC_Structured_Data::output_structured_data() Outputs structured data.
 //  * @since 2.5.0
 //  */
- do_action( 'woocommerce_email_order_details', $order, $sent_to_admin, $plain_text, $email );
+// do_action( 'woocommerce_email_order_details', $order, $sent_to_admin, $plain_text, $email );
 
 // /*
 //  * @hooked WC_Emails::order_meta() Shows order meta data.
@@ -69,6 +69,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
+
 ?>
 <div>
 <p>
@@ -76,8 +77,8 @@ Parabéns! | Congratulations!<br>
 A sua encomenda chegou ao destino escolhido. | Your order has arrived at your chosen destination.
 </p>
 <p>Quero continuar a servi-lo com o máximo de rigor e satisfação. | I want to continue to serve you with the utmost rigor and satisfaction.</p>
-<p>Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a {item_name}, fico verdadeiramente agradecido por isso.</p>
-<p>Please go to the form to help me improve by telling me about your experience with {item_name}, I am truly grateful for that.</p>
+<p>Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a <?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text, $email ); ?>, fico verdadeiramente agradecido por isso.</p>
+<p>Please go to the form to help me improve by telling me about your experience with <?php do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text, $email ); ?>, I am truly grateful for that.</p>
 
 <tr>
 	<td align="center" valign="top" style="padding: 48px 48px 32px;">
