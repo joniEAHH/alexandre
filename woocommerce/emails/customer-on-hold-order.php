@@ -62,8 +62,49 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
+?>
 
+<tr>
+	<td align="center" valign="top">
+		<!-- Footer -->
+		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
+			<tr>
+				<td align="center" valign="top">
+					<!-- Header -->
+					<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header">
+						<tr>
+						<td style="padding: 10px; float: left;">
+								<a style="float: left; width: 20px; height: 20px; background-image: url(https://berlindes.com/wp-content/uploads/2019/05/insta-icon_claro.png); display: block; background-size: contain; background-repeat: no-repeat;" href="https://www.instagram.com/berlindesofficial/"></a>
+								<a style="float: left; width: 20px; height: 20px; margin-left: 10px; background-image: url(https://berlindes.com/wp-content/uploads/2019/05/insta-face_claro.png); display: block; background-size: contain; background-repeat: no-repeat;" href="https://www.facebook.com/berlindesoficial/"></a>
+							</td>
+
+							<td style="padding: 10px; float: right;">
+								<h1 style="font-family: roboto; font-size: 14px; color: #f6dfab; margin: 0;">Berlindes®</h1>
+							</td>
+						</tr>
+					</table>
+					<!-- End Header -->
+				</td>
+			</tr>
+			<tr>
+				<td valign="top">
+					<table border="0" cellpadding="10" cellspacing="0" width="100%">
+						<tr>
+							<td colspan="2" valign="middle" id="credit">
+								<?php echo wpautop( wp_kses_post( wptexturize( apply_filters( 'woocommerce_email_footer_text', get_option( 'woocommerce_email_footer_text' ) ) ) ) ); ?>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!-- End Footer -->
+	</td>
+</tr>
+<?php
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
  */
 do_action( 'woocommerce_email_footer', $email );
+?>
+
