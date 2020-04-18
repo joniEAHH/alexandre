@@ -112,6 +112,14 @@ p {
 	line-heigth: 1.4em;
 }
 
+.et_pb_button {
+    color: #000000;
+    border-color: #000000;
+    border-radius: 0px;
+    font-size: 14px;
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+}
+
 #template_footer #credit {
 	border: 0;
 	color: <?php echo esc_attr( $text_lighter_40 ); ?>;

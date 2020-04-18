@@ -94,7 +94,7 @@ A sua encomenda chegou ao destino escolhido. | Your order has arrived at your ch
 <p>Quero continuar a servi-lo com o máximo de rigor e satisfação. | I want to continue to serve you with the utmost rigor and satisfaction.</p>
 <p>Por favor, aceda ao formulário para me ajudar a melhorar, contando-me como foi a sua experiência com a <?php echo $crack; ?>, fico verdadeiramente agradecido por isso.</p>
 <p>Please go to the form to help me improve by telling me about your experience with <?php echo $crack; ?>, I am truly grateful for that.</p>
-
+<a class="et_pb_button" href="https://forms.gle/c8hXQWG5dJJY49C68" target="_blank">Aceder ao formulário | Access form</a>
 <tr>
 	<td align="center" valign="top" style="padding: 48px 48px 32px;">
 		<!-- Footer -->
