@@ -94,7 +94,7 @@ if ( $additional_content ) {
 						Até breve,<br>
 						See you later,
 					</p>
-					<p style="font-weight: bold;">Alexandre Coxo</p>
+					<p style="font-weight: bold; color: black;">Alexandre Coxo</p>
 					<!-- End Header -->
 				</td>
 			</tr>
