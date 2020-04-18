@@ -74,7 +74,7 @@ if ( $additional_content ) {
 <tr>
 	<td align="center" valign="top" style="padding: 48px 48px 32px;">
 		<!-- Footer -->
-		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
+		<table border="0" cellpadding="10" cellspacing="0" id="template_footer">
 			<tr>
 				<td align="right" valign="top">
 					<!-- Header -->
@@ -94,7 +94,7 @@ if ( $additional_content ) {
 
 			<tr>
 				<td>
-					<table border="0" cellpadding="0" cellspacing="0" width="600" id="template_header">
+					<table border="0" cellpadding="0" cellspacing="0" id="template_header">
 						<tr>
 							<td align="center" style="padding: 10px;">
 								<div style="display: inline-flex;">
