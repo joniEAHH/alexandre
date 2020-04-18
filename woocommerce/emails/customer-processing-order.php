@@ -56,6 +56,50 @@ if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
 
+?>
+<tr>
+	<td align="center" valign="top">
+		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_header">
+			<tr>
+				<td align="center" style="padding: 10px;">
+					<div style="display: inline-flex;">
+						<a style="width: 20px; height: 20px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/insta-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+						href="https://www.instagram.com/alexandre_coxo/"></a>
+						<a style="width: 20px; height: 20px; margin-left: 10px; background-image: url(https://alexandrecoxo.com/wp-content/uploads/2020/04/face-1.png); display: block; background-size: contain; background-repeat: no-repeat;" 
+						href="https://www.facebook.com/alexandrecoxoart/"></a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td align="center" valign="top">
+		<!-- Footer -->
+		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
+			<tr>
+				<td align="right" valign="top">
+					<!-- Header -->
+					<p>
+						Obrigado pela sua aquisição.<br>
+						Thank you for your purchase.
+					</p>
+
+					<p>
+						Até breve,<br>
+						See you later,
+					</p>
+					<p style="font-weight: bold; color: black;">Alexandre Coxo</p>
+					<!-- End Header -->
+				</td>
+			</tr>
+		</table>
+		<!-- End Footer -->
+	</td>
+</tr>
+
+<?php
+
 /*
  * @hooked WC_Emails::email_footer() Output the email footer
  */
