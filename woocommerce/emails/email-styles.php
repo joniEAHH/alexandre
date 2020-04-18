@@ -101,7 +101,8 @@ p {
 	width: 250px;
 }
 
-#template_footer td {
+#template_footer td,
+#template_footer_notas td {
 	padding: 0;
 	border-radius: 6px;
 }
