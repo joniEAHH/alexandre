@@ -70,7 +70,22 @@ if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
 
+
 ?>
+
+<p style="margin-bottom: 5px;">
+	<?php
+	if ( $sent_to_admin ) {
+		$before = '<a class="link" href="' . esc_url( $order->get_edit_order_url() ) . '">';
+		$after  = '</a>';
+	} else {
+		$before = '';
+		$after  = '';
+	}
+	/* translators: %s: Order ID. */
+	echo wp_kses_post( $before . sprintf( __( '[Order #%s]', 'woocommerce' ) . $after . ' (<time datetime="%s">%s</time>)', $order->get_order_number(), $order->get_date_created()->format( 'c' ), wc_format_datetime( $order->get_date_created() ) ) );
+	?>
+</p>
 <div>
 <p>
 Parabéns! | Congratulations!<br>
