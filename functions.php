@@ -131,7 +131,7 @@ add_filter( 'woocommerce_product_description_heading', '__return_null' );
 // define the woocommerce_email_customer_details_fields callback 
 function filter_woocommerce_email_customer_details_fields( $fields, $sent_to_admin, $order ) { 
   // make filter magic happen here... 
-  return str_replace( __( 'CTT Tracking', 'woocommerce' ), __( 'Teste', 'woocommerce' ), $fields );
+  return "cuecas";
 }; 
        
 // add the filter 
