@@ -269,4 +269,9 @@ img {
 	height: auto;
 }
 
+
+.processing-order #addresses {
+	display: none;
+}
+
 <?php
