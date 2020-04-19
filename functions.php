@@ -125,7 +125,14 @@ add_filter( 'woocommerce_product_description_heading', '__return_null' );
 // }
 
 
-add_filter( 'woocommerce_email_customer_details', 'wc_custom_replace_ctt_tracking' );
-function wc_custom_replace_ctt_tracking( $html ) {
-  return "teste";
-}
+
+
+
+// define the woocommerce_email_customer_details_fields callback 
+function filter_woocommerce_email_customer_details_fields( $fields, $sent_to_admin, $order ) { 
+  // make filter magic happen here... 
+  return str_replace( __( 'CTT Tracking', 'woocommerce' ), __( 'Teste', 'woocommerce' ), $fields );
+}; 
+       
+// add the filter 
+add_filter( 'woocommerce_email_customer_details_fields', 'filter_woocommerce_email_customer_details_fields', 10, 3 );
