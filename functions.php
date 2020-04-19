@@ -113,12 +113,6 @@ add_filter( 'woocommerce_product_description_heading', '__return_null' );
 
 function kia_display_email_order_user_meta( $order, $sent_to_admin, $plain_text ) {
   $user_id = $order->customer_user;
-  if( ! empty( $user_id ) && ( $data = get_user_meta( $user_id, '_some_user_meta', true ) ) != '' ){
-      if( $plain_text ){
-          echo 'The user data for some field is ' . $data;
-      } else {
-          echo '<p>The user data for <strong>some field</strong> is ' . $data . '</p>';
-      }
-  }    
+  echo '<p>The user data for <strong>some field</strong> is ' . $user_id . '</p>';
 }
 add_action('woocommerce_email_customer_details', 'kia_display_email_order_user_meta', 30, 3 );
