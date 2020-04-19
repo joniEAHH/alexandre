@@ -50,8 +50,6 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 ?>
 <div class="processing-order">
 
-	<h1>Olá Alexandre,</h1>
-
 	<p>A sua encomenda foi expedida! | Your order has been shipped!</p>
 	<p>O número de rastreamento da sua encomenda é:<br>
 	Your order tracking number is:<br>
