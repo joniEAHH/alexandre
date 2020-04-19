@@ -135,4 +135,4 @@ function filter_woocommerce_email_customer_details_fields( $fields, $sent_to_adm
 }; 
        
 // add the filter 
-add_filter( 'woocommerce_email_customer_details_fields', 'filter_woocommerce_email_customer_details_fields', 10, 3 );
+add_filter( 'woocommerce_email_customer_details_fields', 'filter_woocommerce_email_customer_details_fields', 40, 3 );
