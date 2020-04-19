@@ -64,6 +64,10 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 	<?php
 }
 
+
+?>
+<div id="customer-invoice">
+<?php
 /**
  * Hook for the woocommerce_email_order_details.
  *
@@ -95,6 +99,10 @@ do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_
 if ( $additional_content ) {
 	echo wp_kses_post( wpautop( wptexturize( $additional_content ) ) );
 }
+
+?>
+</div>
+<?php
 
 /**
  * Executes the email footer.
