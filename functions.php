@@ -111,28 +111,14 @@ function bbloomer_price_free_zero_empty( $price, $product ){
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
 
 
-
-// add_filter( 'woocommerce_email_styles', 'bbloomer_add_css_to_emails', 9999, 2 );
- 
-// function bbloomer_add_css_to_emails( $css, $email ) { 
-//   var_dump($email->id);
-// if ( $email->id == 'new_order' ) {
-//    $css .= '
-//       #header_wrapper { display: none !important; }
-//    ';
-// }
-// return $css;
-// }
-
-
-
-
-
-// define the woocommerce_email_customer_details_fields callback 
-function filter_woocommerce_email_customer_details_fields( $fields, $sent_to_admin, $order ) { 
-  // make filter magic happen here... 
-  return "cuecas";
-}; 
-       
-// add the filter 
-add_filter( 'woocommerce_email_customer_details_fields', 'filter_woocommerce_email_customer_details_fields', 40, 3 );
+function kia_display_email_order_user_meta( $order, $sent_to_admin, $plain_text ) {
+  $user_id = $order->customer_user;
+  if( ! empty( $user_id ) && ( $data = get_user_meta( $user_id, '_some_user_meta', true ) ) != '' ){
+      if( $plain_text ){
+          echo 'The user data for some field is ' . $data;
+      } else {
+          echo '<p>The user data for <strong>some field</strong> is ' . $data . '</p>';
+      }
+  }    
+}
+add_action('woocommerce_email_customer_details', 'kia_display_email_order_user_meta', 30, 3 );
