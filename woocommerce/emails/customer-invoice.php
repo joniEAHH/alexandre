@@ -27,7 +27,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <?php /* translators: %s: Customer first name */ ?>
-<p><?php printf( esc_html__( 'Olá %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></p>
+<h1><?php printf( esc_html__( 'Olá %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?></h1>
+
+<p>A sua compra foi confirmada com sucesso! | Your purchase has been successfully confirmed!</p>
+<p>Estou a tratar da sua encomenda com toda a atenção. | I am handling your order very carefully.</p>
+<p>Assim que for expedida irá receber o email com o número de rastreamento. | Once shipped you will receive the email with the tracking number.</p>
+<p>Segue o descritivo da sua compra: | Following is the description of your purchase:</p>
+
 
 <?php if ( $order->has_status( 'pending' ) ) { ?>
 	<p>
@@ -52,7 +58,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 	<p>
 	<?php
 	/* translators: %s Order date */
-	printf( esc_html__( 'Here are the details of your order placed on %s:', 'woocommerce' ), esc_html( wc_format_datetime( $order->get_date_created() ) ) );
+		//printf( esc_html__( 'Here are the details of your order placed on %s:', 'woocommerce' ), esc_html( wc_format_datetime( $order->get_date_created() ) ) );
 	?>
 	</p>
 	<?php
