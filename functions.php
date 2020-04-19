@@ -125,7 +125,7 @@ add_filter( 'woocommerce_product_description_heading', '__return_null' );
 // }
 
 
-add_filter( 'woocommerce_email_customer_details', 'wc_custom_replace_ctt_tracking' );
+add_filter( 'woocommerce_email_customer_details', 'wc_custom_replace_ctt_tracking', 9999, 2 );
 function wc_custom_replace_ctt_tracking( $html ) {
   return str_replace( __( 'CTT Tracking', 'woocommerce' ), __( 'Teste', 'woocommerce' ), $html );
 }
