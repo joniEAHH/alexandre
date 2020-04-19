@@ -75,7 +75,7 @@ if ( $additional_content ) {
 ?>
 
 <tr>
-	<td align="center" valign="top" style="padding: 48px 48px 32px;">
+	<td align="center" valign="top" style="padding: 48px 48px 0;">
 		<!-- Footer -->
 		<table border="0" cellpadding="10" cellspacing="0" width="600" id="template_footer">
 			<tr>

@@ -143,7 +143,7 @@ p {
 }
 
 #body_content table td {
-	padding: 48px 48px 32px;
+	padding: 48px 48px 0;
 }
 
 #body_content table td td {
