@@ -48,7 +48,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 //  * @hooked WC_Emails::email_address() Shows email address
 //  */
 ?>
-<div class="processing-order">
+<div id="processing-order">
 
 	<p>A sua encomenda foi expedida! | Your order has been shipped!</p>
 	<p>O número de rastreamento da sua encomenda é:<br>

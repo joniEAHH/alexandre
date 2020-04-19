@@ -270,7 +270,9 @@ img {
 }
 
 
-.processing-order #addresses {
+#processing-order #addresses,
+#customer-invoice > h3,
+#customer-invoice > p:last-child {
 	display: none;
 }
 
