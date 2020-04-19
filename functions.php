@@ -105,8 +105,6 @@ function bbloomer_price_free_zero_empty( $price, $product ){
     return $price;
 }
 
-
-
 // Remove the product description Title
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
 
@@ -115,4 +113,4 @@ function kia_display_email_order_user_meta( $order, $sent_to_admin, $plain_text 
   $user_id = $order->customer_user;
   echo '<p>The user data for <strong>some field</strong> is ' . $user_id . '</p>';
 }
-add_action('woocommerce_email_customer_details', 'kia_display_email_order_user_meta', 30, 3 );
+add_filter('woocommerce_email_customer_details', 'kia_display_email_order_user_meta', 30, 3 );
