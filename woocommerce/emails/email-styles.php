@@ -271,9 +271,12 @@ img {
 
 
 #processing-order #addresses,
-#customer-invoice > h3,
-#customer-invoice > p:last-child {
+.ctt-tracking {
 	display: none;
+}
+
+#processing-order .ctt-tracking {
+	display: block;
 }
 
 <?php
