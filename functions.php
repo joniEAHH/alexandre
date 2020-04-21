@@ -124,7 +124,7 @@ add_action( 'woocommerce_email_before_order_table', 'bbloomer_add_content_specif
   
 function bbloomer_add_content_specific_email( $order, $sent_to_admin, $plain_text, $email ) {
    if ( $email->id == 'customer_processing_order' && $order->total !== 0.00 ) {
-        var_dump($order);
+        var_dump($order->total);
       echo '<div id="processing-order">
 
       <p>A sua encomenda foi expedida! | Your order has been shipped!</p>
