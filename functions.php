@@ -109,3 +109,13 @@ function bbloomer_price_free_zero_empty( $price, $product ){
 add_filter( 'woocommerce_product_description_heading', '__return_null' );
 
 
+add_action( 'woocommerce_thankyou', 'bbloomer_redirectcustom');
+  
+function bbloomer_redirectcustom( $order_id ){
+    $order = wc_get_order( $order_id );
+    $url = 'https://alexandrecoxo.com/agradecimento/';
+    if ( ! $order->has_status( 'failed' ) ) {
+        wp_safe_redirect( $url );
+        exit;
+    }
+}
