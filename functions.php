@@ -150,7 +150,7 @@ function filter_woocommerce_email_heading( $email_heading , $email ) {
     };
     
     // add the filter
-    add_filter( 'woocommerce_email_headers', 'filter_woocommerce_email_heading', 10, 3 ); 
+    add_filter( 'woocommerce_email_header', 'filter_woocommerce_email_heading', 10, 3 ); 
 
 
  
