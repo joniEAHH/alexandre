@@ -48,20 +48,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 //  * @hooked WC_Emails::email_address() Shows email address
 //  */
 ?>
-<div id="processing-order">
 
-	<p>A sua encomenda foi expedida! | Your order has been shipped!</p>
-	<p>O número de rastreamento da sua encomenda é:<br>
-	Your order tracking number is:<br>
-	<?php do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email ); ?>
-	</p>
-	<p>Pode acompanhar a encomenda através do site do nosso parceiro (aqui), colocando o seu número de rastreamento no espaço próprio.<br>
-	You can track the order through our partner’s website (here) by placing your tracking number in the space provided.<br>
-	encomenda: | Following is the description of your order:</p>
-	<p>Se tiver alguma dúvida, sinta-se livre de entrar em contato comigo.<br>
-	If you have any questions, feel free to contact me.</p>
-
-</div>
 
 <?php
 

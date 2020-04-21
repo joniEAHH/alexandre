@@ -123,8 +123,20 @@ function bbloomer_redirectcustom( $order_id ){
 add_action( 'woocommerce_email_before_order_table', 'bbloomer_add_content_specific_email', 20, 4 );
   
 function bbloomer_add_content_specific_email( $order, $sent_to_admin, $plain_text, $email ) {
-   if ( $email->id == 'customer_processing_order' ) {
+   if ( $email->id == 'customer_processing_order' && $order->total !== 0.00 ) {
         var_dump($order);
-      echo '<h2 class="email-upsell-title">Get 20% off</h2><p class="email-upsell-p">Thank you for making this purchase! Come back and use the code "<strong>Back4More</strong>" to receive a 20% discount on your next purchase! Click here to continue shopping.</p>';
+      echo '<div id="processing-order">
+
+      <p>A sua encomenda foi expedida! | Your order has been shipped!</p>
+      <p>O número de rastreamento da sua encomenda é:<br>
+      Your order tracking number is:<br>';
+      do_action( 'woocommerce_email_customer_details', $order, $sent_to_admin, $plain_text, $email );
+      echo '</p>
+      <p>Pode acompanhar a encomenda através do site do nosso parceiro (aqui), colocando o seu número de rastreamento no espaço próprio.<br>
+      You can track the order through our partner’s website (here) by placing your tracking number in the space provided.<br>
+      encomenda: | Following is the description of your order:</p>
+      <p>Se tiver alguma dúvida, sinta-se livre de entrar em contato comigo.<br>
+      If you have any questions, feel free to contact me.</p>
+     </div>';
    }
 }
