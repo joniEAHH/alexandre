@@ -123,7 +123,7 @@ function bbloomer_redirectcustom( $order_id ){
 add_action( 'woocommerce_email_before_order_table', 'bbloomer_add_content_specific_email', 20, 4 );
   
 function bbloomer_add_content_specific_email( $order, $sent_to_admin, $plain_text, $email ) {
-   if ( $email->id == 'customer_processing_order' && $order->total !== 0.00 ) {
+   if ( $email->id == 'customer_processing_order' && $order->total !== "0.00" ) {
         var_dump($order->total);
       echo '<div id="processing-order">
 
