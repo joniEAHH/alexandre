@@ -157,7 +157,6 @@ add_filter( "woocommerce_email_heading_customer_processing_order", 'filter_wooco
 
 add_action( 'woocommerce_email_order_details', 'ts_email_order_details', 10, 4 );
 function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
-    var_dump($order->total);
     if ( $order->total == "0.00" ) {
     echo '<p>Na tabela seguinte encontra as ligações para descarregar os ficheiros!
     Clique na palavra correspondente da coluna “Download” para iniciar a descarga.
