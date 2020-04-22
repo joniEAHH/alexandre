@@ -141,11 +141,12 @@ function bbloomer_add_content_specific_email( $order, $sent_to_admin, $plain_tex
    }
 }
 
-function filter_woocommerce_email_heading( $email_heading , $email ) {
+function filter_woocommerce_email_heading( $order, $email_heading, $email ) {
+    var_dump($order->total);
     // make filter magic happen here...
     $email_heading = 'Descarregue / Download';
     return $email_heading;
 };
     
-    // add the filter
-    add_filter( "woocommerce_email_heading_customer_processing_order", 'filter_woocommerce_email_heading', 10, 2 );
+// add the filter
+add_filter( "woocommerce_email_heading_customer_processing_order", 'filter_woocommerce_email_heading', 10, 2 );
