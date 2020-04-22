@@ -148,6 +148,4 @@ function filter_woocommerce_email_heading( $email_heading , $email ) {
 };
     
     // add the filter
-    add_filter( "woocommerce_email_heading_customer_new_account", 'filter_woocommerce_email_heading', 10, 2 );
-    add_filter( "woocommerce_email_heading_cancelled_order", 'filter_woocommerce_email_heading', 10, 2 );
-    add_filter( "woocommerce_email_heading_customer_completed_order", 'filter_woocommerce_email_heading', 10, 2 );
+    add_filter( "woocommerce_email_heading_customer_processing_order", 'filter_woocommerce_email_heading', 10, 2 );
