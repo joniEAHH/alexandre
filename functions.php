@@ -151,3 +151,16 @@ function filter_woocommerce_email_heading( $email_heading, $email ) {
     
 // add the filter
 add_filter( "woocommerce_email_heading_customer_processing_order", 'filter_woocommerce_email_heading', 10, 2 );
+
+
+
+
+add_action( 'woocommerce_email_order_details', 'ts_email_order_details', 10, 4 );
+function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
+    var_dump($email->total);
+    if ( $email->total == "0.00" ) {
+    echo '<p>Na tabela seguinte encontra as ligações para descarregar os ficheiros!
+    Clique na palavra correspondente da coluna “Download” para iniciar a descarga.
+    </p>';
+    }
+}
