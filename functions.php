@@ -187,16 +187,19 @@ function ts_email_order_details($order, $sent_to_admin, $plain_text, $email)
 
 // add_filter('woocommerce_payment_complete_order_status', 'my_wc_complete_order_status');
 
+add_action('woocommerce_order_status_changed', 'ts_auto_complete_virtual');
 
-function virtual_order_payment_complete_order_status($order_status, $order_id)
+function ts_auto_complete_virtual($order_id)
 {
 
+	if (!$order_id) {
+		return;
+	}
+
+	global $product;
 	$order = wc_get_order($order_id);
 
-	if (
-		'processing' == $order_status &&
-		('on-hold' == $order->status || 'pending' == $order->status || 'failed' == $order->status)
-	) {
+	if ($order->data['status'] == 'processing') {
 
 		$virtual_order = null;
 
@@ -209,7 +212,7 @@ function virtual_order_payment_complete_order_status($order_status, $order_id)
 					$_product = $order->get_product_from_item($item);
 
 					if (!$_product->is_virtual()) {
-						// once we've found one non-virtual product we know we're done, break out of the loop
+						// once we find one non-virtual product, break out of the loop
 						$virtual_order = false;
 						break;
 					} else {
@@ -219,13 +222,9 @@ function virtual_order_payment_complete_order_status($order_status, $order_id)
 			}
 		}
 
-		// virtual order, mark as completed
+		// if all are virtual products, mark as completed
 		if ($virtual_order) {
-			return 'processing';
+			$order->update_status('processing');
 		}
 	}
-
-	// non-virtual order, return original status
-	return $order_status;
 }
-add_filter('woocommerce_payment_complete_order_status', 'virtual_order_payment_complete_order_status');
