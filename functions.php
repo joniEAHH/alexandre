@@ -168,12 +168,12 @@ function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
 /*prevent any orders from autocompleting*/
 /*
  */
-add_action( 'woocommerce_thankyou', 'stop_auto_complete_order' );
-function stop_auto_complete_order( $order_id ) { 
+add_action( 'woocommerce_thankyou', 'custom_woocommerce_auto_complete_order', 10, 3 );
+function custom_woocommerce_auto_complete_order( $order_id ) { 
     if ( ! $order_id ) {
         return;
     }
 
     $order = wc_get_order( $order_id );
-    $order->update_status( 'processing' );
+	$order->update_status( 'processing' );
 }
