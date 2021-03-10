@@ -168,42 +168,8 @@ function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
 /*prevent any orders from autocompleting*/
 /*
  */
-function handmade_woocommerce_order( $order_id ) {
-    if( ! $order_id ) return;
-
-    // Get order
-    $order = wc_get_order( $order_id );
-
-    // get order items = each product in the order
-    $items = $order->get_items();
-
-    // Set variable
-    $found = false;
-
-    foreach ( $items as $item ) {
-        // Get product id
-        $product = wc_get_product( $item['product_id'] );
-
-        // Is virtual
-        $is_virtual = $product->is_virtual();
-
-        // Is_downloadable
-        $is_downloadable = $product->is_downloadable();
-        
-        // Backorders allowed
-        $backorders_allowed = $product->backorders_allowed();
-
-        if( $is_virtual && $is_downloadable && $backorders_allowed ) {
-            $found = true;
-            // true, break loop
-            break;
-        }
-    }
-
-    // true
-    if( $found ) {
-        $order->update_status( 'processing' );
-    }
+function my_wc_complete_order_status( $stauts ) {
+    return 'processing';
 }
 
-add_action('woocommerce_thankyou', 'handmade_woocommerce_order', 10, 1 );
+add_filter( 'woocommerce_payment_complete_order_status', 'my_wc_complete_order_status' );
