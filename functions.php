@@ -178,53 +178,9 @@ function ts_email_order_details($order, $sent_to_admin, $plain_text, $email)
 
 
 /*prevent any orders from autocompleting*/
-/*
- */
-// function my_wc_complete_order_status($stauts)
-// {
-// 	return 'processing';
-// }
-
-// add_filter('woocommerce_payment_complete_order_status', 'my_wc_complete_order_status');
-
-add_action('woocommerce_order_status_changed', 'ts_auto_complete_virtual');
-
-function ts_auto_complete_virtual($order_id)
+function my_wc_complete_order_status($stauts)
 {
-
-	if (!$order_id) {
-		return;
-	}
-
-	global $product;
-	$order = wc_get_order($order_id);
-
-	if ($order->data['status'] == 'processing') {
-
-		$virtual_order = null;
-
-		if (count($order->get_items()) > 0) {
-
-			foreach ($order->get_items() as $item) {
-
-				if ('line_item' == $item['type']) {
-
-					$_product = $order->get_product_from_item($item);
-
-					if (!$_product->is_virtual()) {
-						// once we find one non-virtual product, break out of the loop
-						$virtual_order = false;
-						break;
-					} else {
-						$virtual_order = true;
-					}
-				}
-			}
-		}
-
-		// if all are virtual products, mark as completed
-		if ($virtual_order) {
-			$order->update_status('processing');
-		}
-	}
+	return 'processing';
 }
+
+add_filter('woocommerce_payment_complete_order_status', 'my_wc_complete_order_status');
