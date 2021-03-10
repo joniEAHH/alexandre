@@ -163,3 +163,17 @@ function ts_email_order_details( $order, $sent_to_admin, $plain_text, $email ) {
     </p>';
     }
 }
+
+
+/*prevent any orders from autocompleting*/
+/*
+ */
+add_action( 'woocommerce_thankyou', 'stop_auto_complete_order' );
+function stop_auto_complete_order( $order_id ) { 
+    if ( ! $order_id ) {
+        return;
+    }
+
+    $order = wc_get_order( $order_id );
+    $order->update_status( 'processing' );
+}
