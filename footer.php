@@ -43,7 +43,7 @@ if ( ! is_page_template( 'page-template-blank.php' ) ) : ?>
 					}
 				?>
 
-						<p id="footer-info"><span>ALEXANDRE COXO </span><span class="bv_hr">|</span> <span>2020</span> </p>
+						<p id="footer-info"><span>ALEXANDRE COXO </span><span class="bv_hr">|</span> <span>2023</span> </p>
 					</div>	<!-- .container -->
 				</div>
 				  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBsZT8pW3SQfUe9-IhHUzwnjKueMFQwtMw&libraries=places" async defer></script>
